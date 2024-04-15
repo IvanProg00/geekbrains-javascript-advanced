@@ -316,7 +316,7 @@ img {
 	align-items: center;
 }
 
-.featured-items .card-list .card .add-cart button {
+.featured-items .card-list .card .add-cart .add-cart-btn {
 	border: none;
 	border: 1px solid #fff;
 	display: flex;
@@ -329,6 +329,7 @@ img {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	cursor: pointer;
 }
 
 .featured-items .card-list .card .add-cart img {
@@ -620,4 +621,98 @@ img {
 		flex-direction: column-reverse;
 		gap: 47px;
 	}
+}
+
+.cart-items {
+	margin-top: 96px;
+	margin-bottom: 60px;
+}
+
+.cart-items h2 {
+	color: #222;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+}
+
+.cart-items p {
+	color: #9f9f9f;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 57px;
+}
+
+.cart-items .card-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-top: 20px;
+}
+
+.cart-items .card-list .card {
+	background-color: #f8f8f8;
+	display: flex;
+}
+
+.cart-items .card-list .card .info {
+	margin: 20px 16px;
+}
+
+.cart-items .card-list .card h3 {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.cart-items .card-list .card p {
+	color: #5d5d5d;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+	margin-bottom: 18px;
+}
+
+.cart-items .card-list .card .img {
+	position: relative;
+}
+
+.cart-items .card-list .card .remove-item .remove-item-btn {
+	border: none;
+	background-color: transparent;
+	display: block;
+	margin: 4px 14px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.cart-items .card-list .card .remove-item .remove-item-btn img {
+	width: 100%;
+	max-width: 26px;
+	display: block;
+}
+
+.cart-items .card-list .card .price {
+	color: #f16d7f;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.cart-items .all-products {
+	color: #f26376;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #fff;
+	padding: 15px 40px;
+	margin: 48px auto;
+	display: block;
+	border: 1px solid #ff6a6a;
+	cursor: pointer;
+}
+
+.cart-items .all-products:hover {
+	background-color: #f16d7f;
+	color: #fff;
+	transition-duration: 0.2s;
 }
